@@ -8,10 +8,10 @@ class CsvHelper extends AppHelper {
     var $line = array(); 
     var $buffer; 
      
-    function CsvHelper() { 
+/*    function CsvHelper() { 
         $this->clear(); 
     } 
-     
+*/     
     function clear() { 
         $this->line = array(); 
         $this->buffer = fopen('php://temp/maxmemory:'. (5*1024*1024), 'r+'); 
